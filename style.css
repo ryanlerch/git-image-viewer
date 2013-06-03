@@ -1,0 +1,86 @@
+.boxes-bg{
+background-color:#ff0fff;
+}
+
+.boxes-bg tab{
+background-color:#ffff00;
+border:none;
+margin:0;
+-GtkNotebook-initial-gap: 0;
+-GtkNotebook-tab-curvature: 0; 
+}
+
+GtkTreeView {
+    -GtkTreeView-vertical-separator: 15;
+    padding-left:20px;
+    background-color:#393f3f;
+    font-weight:bold;
+    background-image: url("images/blank.svg");
+    background-repeat:repeat-y;
+    background-position: right;
+    -GtkWidget-focus-line-width: 0;
+
+}
+
+GtkScrollbar
+{
+  -GtkRange-slider-width: 0;
+  -GtkScrollbar-min-slider-length: 51;
+  -GtkScrollbar-has-backward-stepper: false;
+  -GtkScrollbar-has-forward-stepper: false;
+  
+}
+
+GtkPaned
+{
+  -GtkPaned-handle-size: 0
+}
+
+GtkWindow
+{
+  background-color:#1c1e1d;
+}
+
+GtkScrollbar.trough {
+  /*background-color: pink;*/
+
+}
+
+GtkTreeView row {
+    /*background-color: #eee;*/
+}
+
+
+
+
+GtkTreeView row:selected{
+     background-image: -gtk-gradient (linear,
+                                       left top,
+       left bottom,
+       from (#3465a4),
+       to (darker(#3465a4)));
+    color:#fff;
+    
+    border-width: 0px 12px 0px 0;
+    border-image-source: url("images/arrow.svg");
+    border-image-slice: 0 12 0 0;
+    border-image-width: 0px 12px 0px 0;
+    border-image-repeat: stretch;
+    border-style: solid;
+    border-color:pink;
+}
+
+GtkTreeView row{
+
+    color:#eee;
+    padding-right:300px;
+}
+/*
+GtkCellRenderer:focus
+{
+color: green;
+}*/
+
+GtkTreeView row:active{
+color:#ff00ff;
+}
